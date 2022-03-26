@@ -13,7 +13,7 @@
 
         </ul>
     </div>
-    <div class="h-px sm:h-auto w-1/2 sm:w-px bg-primary mx-auto sm:mx-0"></div>
+    <div class="h-px sm:h-auto w-1/2 sm:w-px bg-wr-primary mx-auto sm:mx-0"></div>
     <div class="text-center px-8 py-4">
         <ul class="list-none">
             <li>
@@ -24,7 +24,7 @@
             </li>
         </ul>
     </div>
-    <div class="h-px sm:h-auto w-1/2 sm:w-px bg-primary mx-auto sm:mx-0"></div>
+    <div class="h-px sm:h-auto w-1/2 sm:w-px bg-wr-primary mx-auto sm:mx-0"></div>
     <div class="text-center pl-0 sm:pl-8 py-4">
         <ul class="list-none">
             <li>
@@ -43,7 +43,7 @@
 </div>
 <div class="">
     <a id="btt"
-        class="hidden fixed bottom-0 right-0 mb-4 mr-4 text-gray-200 border border-primary hover:bg-gray-200 hover:text-primary hover:border-browngray no-underline px-6 py-1 bg-primary shadow-md"
+        class="hidden fixed bottom-0 right-0 mb-4 mr-4 text-gray-200 border border-wr-primary hover:bg-gray-200 hover:text-wr-primary hover:border-browngray no-underline px-6 py-1 bg-wr-primary shadow-md"
         href="#top" title="Back to Top">UP</a>
 </div>
 
@@ -80,11 +80,11 @@
 <template id="followTip">
 
     <a href="https://twitter.com/#"
-        class="inline-block text-gray-200 text-sm bg-primary shadow-md hover:bg-gray-200 hover:text-dark no-underline p-1 px-4 mx-2 my-1"
+        class="inline-block text-gray-200 text-sm bg-wr-primary shadow-md hover:bg-gray-200 hover:text-wr-dark no-underline p-1 px-4 mx-2 my-1"
         target="_blank" rel="noopener">Twitter</a>
 
     <a href="https://linkedin.com/company/#"
-        class="inline-block text-gray-200 text-sm bg-primary shadow-md hover:bg-gray-200 hover:text-dark no-underline p-1 px-4 mx-2 my-1"
+        class="inline-block text-gray-200 text-sm bg-wr-primary shadow-md hover:bg-gray-200 hover:text-wr-dark no-underline p-1 px-4 mx-2 my-1"
         target="_blank" rel="noopener">LinkedIn</a>
 
 </template>

@@ -1,7 +1,5 @@
 <x-site-layout>
-    @section('title')
-        | Avant School Management System
-    @endsection
+    @section('title') | Avant School Management System @endsection
     @section('styles')
         <style>
             .header {
@@ -85,22 +83,22 @@
     @section('hero')
         <div class="flex flex-col justify-center h-full py-12">
             <div class="self-center items-center flex flex-col sm:flex-row w-full md:w-5/6 xl:w-2/3 px-4 sm:px-0">
-                <div class="w-full text-center sm:text-left sm:w-1/2 py-12 sm:px-8">
-                    <h1 class="tracking-wide text-primary text-2xl mb-6">New Thing: <span
-                            class="text-gray-800 font-bold tracking tracking-widest">AWE.SOME</span></h1>
-                    <h2 class="font-bold tracking-widest text-4xl">Intro goes here...</h1>
+                <div class="w-full text-center sm:text-left sm:w-1/2 py-12 sm:pr-6">
+                    <h1 class="tracking-wide text-wr-primary text-2xl mb-6">Avant <span
+                            class="text-gray-800 font-bold tracking tracking-widest block sm:inline-block">School Management System</span></h1>
+                    <h2 class="font-bold tracking-widest text-4xl">Quick and easy</h1>
                         <span class="content__container block font-light text-browngray text-2xl my-6">
                             <ul class="content__container__list">
-                                <li class="content__container__list__item xl:pl-3">Cool Feature</li>
-                                <li class="content__container__list__item xl:pl-3">Another Feature</li>
-                                <li class="content__container__list__item xl:pl-3">Something Else</li>
-                                <li class="content__container__list__item xl:pl-3">Why Not</li>
-                                <li class="content__container__list__item xl:pl-3">Rotating</li>
-                                <li class="content__container__list__item xl:pl-3">List</li>
-                                <li class="content__container__list__item xl:pl-3">Items Here</li>
+                                <li class="content__container__list__item xl:pl-3">Online Exams</li>
+                                <li class="content__container__list__item xl:pl-3">e-Report Cards</li>
+                                <li class="content__container__list__item xl:pl-3">Attendance</li>
+                                <li class="content__container__list__item xl:pl-3">Fee Collections</li>
+                                <li class="content__container__list__item xl:pl-3">SMS alerts</li>
+                                <li class="content__container__list__item xl:pl-3">Syllabus</li>
+                                <li class="content__container__list__item xl:pl-3">Homeworks</li>
                             </ul>
                         </span>
-                        <p class="font-bold tracking-widest text-4xl">...think about it!</p>
+                        <p class="font-bold tracking-widest text-4xl">... and more!</p>
                 </div>
                 <div class="w-full sm:w-1/2">
                     <img src="//localhost:1313/img/undraw_Friends_online_re_r7pq.svg" alt="AWE.SOME header">

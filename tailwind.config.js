@@ -20,10 +20,10 @@ module.exports = {
 
     theme: {
         colors: {
-            'dark' : '#00274B',
-            'primary' : '#2777C0',
-            'secondary' : '#57DAEC',
-            'light' : '#D0EAF9',
+            'wr-dark' : '#00274B',
+            'wr-primary' : '#2777C0',
+            'wr-secondary' : '#57DAEC',
+            'wr-light' : '#D0EAF9',
         },
       },
 };
