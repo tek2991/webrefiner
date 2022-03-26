@@ -14,7 +14,7 @@
         <x-nav-link href="#features">Features</x-nav-link>
 
         <span id="follow"
-            class="hidden sm:inline-block text-gray-800 font-bold hover:text-pink-600 text-lg sm:w-auto sm:px-4 sm:py-1 cursor-pointer">Follow</span>
+            class="hidden sm:inline-block text-gray-800 font-bold hover:text-primary text-lg sm:w-auto sm:px-4 sm:py-1 cursor-pointer">Follow</span>
 
         <x-nav-link-mobile href="https://twitter.com/#" target="_blank" rel="noopener">Twitter</x-nav-link-mobile>
         <x-nav-link-mobile href="https://linkedin.com/company/#" target="_blank" rel="noopener">LinkedIn</x-nav-link-mobile>

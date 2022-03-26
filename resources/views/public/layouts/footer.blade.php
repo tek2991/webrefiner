@@ -38,7 +38,7 @@
 </footer>
 <div class="w-full">
     <span class="block text-center text-gray-800 text-sm font-light">
-        &copy; AWE.SOME 2022
+        &copy; WEBREFINER 2022
     </span>
 </div>
 <div class="">
