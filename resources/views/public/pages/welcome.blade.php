@@ -1,4 +1,7 @@
 <x-site-layout>
+    @section('title')
+        | Avant School Management System
+    @endsection
     @section('styles')
         <style>
             .header {
@@ -105,8 +108,7 @@
             </div>
         </div>
         <div class="flex flex-row w-full justify-center pb-12">
-            <a class="px-10 py-2 text-gray-200 bg-pink-600 rounded-full shadow-md text-lg hover:bg-gray-800 hover:border-red"
-                href="#about">More Information</a>
+            <x-link-primary href="#about">More Information</x-link-primary>
         </div>
     @endsection
     <div id="about" class="w-full min-h-screen flex flex-col justify-center items-center py-12">
@@ -125,8 +127,7 @@
                 alt="AWE.SOME">
         </div>
         <div class="flex flex-row w-full justify-center">
-            <a class="px-10 py-2 text-gray-200 bg-pink-600 rounded-full shadow-md text-lg hover:bg-gray-800 hover:border-red"
-                href="#features">See How it Works</a>
+            <x-link-primary href="#features">See How it Works</x-link-primary>
         </div>
     </div>
 
@@ -289,8 +290,7 @@
             <h3 class="font-bold tracking-widest text-pink-600 text-2xl my-6">...and so much more!</h3>
         </div>
         <div class="flex flex-row w-full justify-center pt-6">
-            <a class="px-10 py-2 text-gray-200 bg-pink-600 rounded-full shadow-md text-lg hover:bg-gray-800 hover:border-red"
-                href="#register">Register Now</a>
+            <x-link-primary href="#register">Register Now</x-link-primary>
         </div>
     </div>
 
@@ -305,22 +305,18 @@
             </div>
             <form class="w-full max-w-lg my-20 mx-auto" action="#" method="post" id="registration-form" target="_blank"
                 validate>
-                <div class="flex items-center border-b border-pink-600 py-2">
+                <div class="flex items-center border-b border-primary py-2">
                     <input
                         class="appearance-none bg-transparent border border-transparent w-full text-gray-200 focus:outline-none focus:bg-gray-400 focus:text-gray-800 focus:border-gray-400 mr-3 py-2 px-3"
                         type="email" value="" name="EMAIL" placeholder="sheldon.cooper@liamg.com"
                         aria-label="Email Address" required>
-                    <button
-                        class="flex-shrink-0 bg-pink-600 border-pink-600 hover:bg-gray-800 hover:text-pink-600 border text-gray-200 py-2 px-4"
-                        type="submit" name="subscribe">
-                        Sign Up
-                    </button>
+                    <x-button-primary type="submit" name="subscribe">Sign Up</x-button-primary>
                 </div>
                 <label class="block text-gray-200 text-left px-2 mt-4" for="gdpr_37169">
                     <input class="leading-tight" type="checkbox" id="gdpr_37169" name="gdpr[37169]" value="Y" required>
                     <span class="text-md font-light">
                         I agree with the <a href="//localhost:1313/privacy"
-                            class="underline hover:no-underline hover:text-pink-600" title="Privacy Policy"
+                            class="underline hover:no-underline hover:text-light" title="Privacy Policy"
                             target="_blank">Privacy Policy</a>
                     </span>
                 </label>

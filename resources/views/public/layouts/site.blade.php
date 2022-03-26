@@ -9,7 +9,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-    <title>{{ config('app.name', 'Avant') }}</title>
+    <title>{{ config('app.name', 'Webrefiner') }} @yield('title')</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('css/normalize.css') }}">

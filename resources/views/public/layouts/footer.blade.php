@@ -3,38 +3,35 @@
         <ul class="list-none">
 
             <li>
-                <a class="text-gray-800 hover:text-pink-600 no-underline" href="https://twitter.com/#"
-                    target="_blank" rel="_noopener">Twitter</a>
+                <x-link-footer href="https://twitter.com/#" target="_blank" rel="_noopener">Twitter</x-link-footer>
             </li>
 
             <li>
-                <a class="text-gray-800 hover:text-pink-600 no-underline" href="https://linkedin.com/company/#"
-                    target="_blank" rel="_noopener">LinkedIn</a>
+                <x-link-footer href="https://linkedin.com/company/#" target="_blank" rel="_noopener">LinkedIn
+                </x-link-footer>
             </li>
 
         </ul>
     </div>
-    <div class="h-px sm:h-auto w-1/2 sm:w-px bg-pink-600 mx-auto sm:mx-0"></div>
+    <div class="h-px sm:h-auto w-1/2 sm:w-px bg-primary mx-auto sm:mx-0"></div>
     <div class="text-center px-8 py-4">
         <ul class="list-none">
             <li>
-                <a class="text-gray-800 hover:text-pink-600 no-underline" href="#about">About</a>
+                <x-link-footer href="#about" >About</x-link-footer>
             </li>
             <li>
-                <a class="text-gray-800 hover:text-pink-600 no-underline" href="#features">Features</a>
+                <x-link-footer href="#features" >Features</x-link-footer>
             </li>
         </ul>
     </div>
-    <div class="h-px sm:h-auto w-1/2 sm:w-px bg-pink-600 mx-auto sm:mx-0"></div>
+    <div class="h-px sm:h-auto w-1/2 sm:w-px bg-primary mx-auto sm:mx-0"></div>
     <div class="text-center pl-0 sm:pl-8 py-4">
         <ul class="list-none">
             <li>
-                <a class="text-gray-800 hover:text-pink-600 no-underline"
-                    href="//localhost:1313/privacy">Privacy</a>
+                <x-link-footer href="#" >Privacy</x-link-footer>
             </li>
             <li>
-                <a class="text-gray-800 hover:text-pink-600 no-underline"
-                    href="//localhost:1313/imprint">Imprint</a>
+                <x-link-footer href="#" >Imprint</x-link-footer>
             </li>
         </ul>
     </div>
@@ -46,16 +43,14 @@
 </div>
 <div class="">
     <a id="btt"
-        class="hidden fixed bottom-0 right-0 mb-4 mr-4 text-gray-200 border border-pink-600 hover:bg-gray-200 hover:text-pink-600 hover:border-browngray no-underline px-6 py-1 bg-pink-600 shadow-md"
+        class="hidden fixed bottom-0 right-0 mb-4 mr-4 text-gray-200 border border-primary hover:bg-gray-200 hover:text-primary hover:border-browngray no-underline px-6 py-1 bg-primary shadow-md"
         href="#top" title="Back to Top">UP</a>
 </div>
 
 <div class="fixed bottom-0 left-0 m-6">
-    <a href="https://github.com/ttntm/hugo-landing-page" target="_blank" rel="noopener"
-        title="Get this theme @ GitHub"
+    <a href="https://github.com/ttntm/hugo-landing-page" target="_blank" rel="noopener" title="Get this theme @ GitHub"
         class="block rounded-full bg-black text-pink-600 hover:bg-white hover:text-black shadow-md p-4">
-        <img src="//localhost:1313/img/github.svg" width="30" height="30" class="block"
-            alt="GitHub icon">
+        <img src="//localhost:1313/img/github.svg" width="30" height="30" class="block" alt="GitHub icon">
     </a>
 </div>
 
@@ -85,11 +80,11 @@
 <template id="followTip">
 
     <a href="https://twitter.com/#"
-        class="inline-block text-gray-200 text-sm bg-pink-600 shadow-md hover:bg-gray-200 hover:text-gray-800 no-underline p-1 px-4 mx-2 my-1"
+        class="inline-block text-gray-200 text-sm bg-primary shadow-md hover:bg-gray-200 hover:text-dark no-underline p-1 px-4 mx-2 my-1"
         target="_blank" rel="noopener">Twitter</a>
 
     <a href="https://linkedin.com/company/#"
-        class="inline-block text-gray-200 text-sm bg-pink-600 shadow-md hover:bg-gray-200 hover:text-gray-800 no-underline p-1 px-4 mx-2 my-1"
+        class="inline-block text-gray-200 text-sm bg-primary shadow-md hover:bg-gray-200 hover:text-dark no-underline p-1 px-4 mx-2 my-1"
         target="_blank" rel="noopener">LinkedIn</a>
 
 </template>
@@ -141,4 +136,3 @@
         })
     })
 </script>
-
