@@ -19,11 +19,13 @@ module.exports = {
     plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 
     theme: {
-        colors: {
-            'wr-dark' : '#00274B',
-            'wr-primary' : '#2777C0',
-            'wr-secondary' : '#57DAEC',
-            'wr-light' : '#D0EAF9',
-        },
+        extend: {
+            colors: {
+                'wr-dark' : '#00274B',
+                'wr-primary' : '#2777C0',
+                'wr-secondary' : '#57DAEC',
+                'wr-light' : '#D0EAF9',
+            },
+        }
       },
 };
