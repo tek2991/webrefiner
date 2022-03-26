@@ -20,7 +20,7 @@ mix.js('resources/js/app.js', 'public/js')
     ])
     .postCss('resources/css/tippy.css', 'public/css')
     .postCss('resources/css/page.css', 'public/css')
-    .postCss('resources/css/normalize.css', 'public/css');
+    .postCss('resources/css/normalize.css', 'public/css')
 
 if (mix.inProduction()) {
     mix.version();
