@@ -14,6 +14,7 @@ const mix = require('laravel-mix');
 mix.js('resources/js/app.js', 'public/js')
     .js('resources/js/tippy.js', 'public/js')
     .js('resources/js/popper.js', 'public/js')
+    .js('resources/js/lightgallery.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         require('postcss-import'),
         require('tailwindcss'),
@@ -21,6 +22,7 @@ mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/tippy.css', 'public/css')
     .postCss('resources/css/page.css', 'public/css')
     .postCss('resources/css/normalize.css', 'public/css')
+    .postCss('resources/css/lightgallery-bundle.css', 'public/css')
 
 if (mix.inProduction()) {
     mix.version();

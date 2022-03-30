@@ -17,10 +17,10 @@
     <div class="text-center px-8 py-4">
         <ul class="list-none">
             <li>
-                <x-link-footer href="#about" >About</x-link-footer>
+                <x-link-footer href="#about">About</x-link-footer>
             </li>
             <li>
-                <x-link-footer href="#features" >Features</x-link-footer>
+                <x-link-footer href="#features">Features</x-link-footer>
             </li>
         </ul>
     </div>
@@ -28,10 +28,10 @@
     <div class="text-center pl-0 sm:pl-8 py-4">
         <ul class="list-none">
             <li>
-                <x-link-footer href="#" >Privacy</x-link-footer>
+                <x-link-footer href="#">Privacy</x-link-footer>
             </li>
             <li>
-                <x-link-footer href="#" >Imprint</x-link-footer>
+                <x-link-footer href="#">Imprint</x-link-footer>
             </li>
         </ul>
     </div>
@@ -48,9 +48,13 @@
 </div>
 
 <div class="fixed bottom-0 left-0 m-6">
-    <a href="https://github.com/ttntm/hugo-landing-page" target="_blank" rel="noopener" title="Get this theme @ GitHub"
-        class="block rounded-full bg-black text-pink-600 hover:bg-white hover:text-black shadow-md p-4">
-        <img src="//localhost:1313/img/github.svg" width="30" height="30" class="block" alt="GitHub icon">
+    <a href="tel:+918011302957" target="_blank" rel="noopener" title="Call Us"
+        class="block rounded-full bg-black text-wr-primary hover:bg-white hover:text-wr-dark shadow-md p-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" class="block"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+        </svg>
     </a>
 </div>
 

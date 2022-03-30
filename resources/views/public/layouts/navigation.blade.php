@@ -5,11 +5,13 @@
         <a href="{{ route('home') }}" class="no-underline"><img src="{{ asset('storage/images/logo.png') }}"
                 alt="Webrefiner Logo" class="h-12 py-1"></a>
         <button id="menuBtn" class="hamburger block sm:hidden focus:outline-none" type="button" onclick="navToggle();"
-            aria-label="Show Menu"><span class="hamburger__top-bun"></span><span
-                class="hamburger__bottom-bun"></span></button>
+            aria-label="Show Menu">
+            <span class="hamburger__top-bun"></span>
+            <span class="hamburger__bottom-bun"></span>
+        </button>
     </div>
     <div id="menu"
-        class="w-full sm:w-auto self-end sm:self-center sm:flex flex-col sm:flex-row items-center h-full py-1 pb-4 sm:py-0 sm:pb-0 flex">
+        class="w-full sm:w-auto self-end sm:self-center sm:flex flex-col sm:flex-row items-center h-full py-1 pb-4 sm:py-0 sm:pb-0 hidden">
         <x-nav-link href="#about">About</x-nav-link>
 
         <x-nav-link class="sm:pl-4" href="#features">Features</x-nav-link>
@@ -18,7 +20,8 @@
             class="hidden sm:inline-block text-gray-800 font-bold hover:text-wr-primary text-lg sm:w-auto sm:px-4 sm:py-1 cursor-pointer">Follow</span>
 
         <x-nav-link-mobile href="https://twitter.com/#" target="_blank" rel="noopener">Twitter</x-nav-link-mobile>
-        <x-nav-link-mobile href="https://linkedin.com/company/#" target="_blank" rel="noopener">LinkedIn</x-nav-link-mobile>
+        <x-nav-link-mobile href="https://linkedin.com/company/#" target="_blank" rel="noopener">LinkedIn
+        </x-nav-link-mobile>
 
         <x-link-ghost href="#register">Register Now</x-link-ghost>
     </div>

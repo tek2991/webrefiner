@@ -1,5 +1,7 @@
 <x-site-layout>
-    @section('title') | Avant School Management System @endsection
+    @section('title')
+        | Avant School Management System
+    @endsection
     @section('styles')
         <style>
             .header {
@@ -79,236 +81,383 @@
             }
 
         </style>
+        <link rel="stylesheet" href="{{ mix('css/lightgallery-bundle.css') }}">
     @endsection
     @section('hero')
         <div class="flex flex-col justify-center h-full py-12">
             <div class="self-center items-center flex flex-col sm:flex-row w-full md:w-5/6 xl:w-2/3 px-4 sm:px-0">
                 <div class="w-full text-center sm:text-left sm:w-1/2 py-12 sm:pr-6">
                     <h1 class="tracking-wide text-wr-primary text-2xl mb-6">Avant <span
-                            class="text-gray-800 font-bold tracking tracking-widest block sm:inline-block">School Management System</span></h1>
-                    <h2 class="font-bold tracking-widest text-4xl">Quick and easy</h1>
+                            class="text-gray-800 font-bold tracking tracking-widest block sm:inline-block">School Management
+                            System</span></h1>
+                    <h2 class="font-bold tracking-widest text-4xl">Empowering faculties with</h1>
                         <span class="content__container block font-light text-browngray text-2xl my-6">
-                            <ul class="content__container__list">
+                            <ul class="content__container__list text-wr-primary font-medium">
                                 <li class="content__container__list__item xl:pl-3">Online Exams</li>
                                 <li class="content__container__list__item xl:pl-3">e-Report Cards</li>
-                                <li class="content__container__list__item xl:pl-3">Attendance</li>
+                                <li class="content__container__list__item xl:pl-3">Digital Attendance</li>
                                 <li class="content__container__list__item xl:pl-3">Fee Collections</li>
                                 <li class="content__container__list__item xl:pl-3">SMS alerts</li>
-                                <li class="content__container__list__item xl:pl-3">Syllabus</li>
+                                <li class="content__container__list__item xl:pl-3">Syllabus Tracking</li>
                                 <li class="content__container__list__item xl:pl-3">Homeworks</li>
                             </ul>
                         </span>
                         <p class="font-bold tracking-widest text-4xl">... and more!</p>
                 </div>
-                <div class="w-full sm:w-1/2">
-                    <img src="//localhost:1313/img/undraw_Friends_online_re_r7pq.svg" alt="AWE.SOME header">
+                <div class="w-full sm:w-1/2 sm:text-right">
+                    <img class="hidden sm:inline-block"
+                        src="{{ asset('storage/images/avant_school_management_system_mockus_android_p.png') }}"
+                        alt="AWE.SOME header">
+                    <img class="inline-block sm:hidden"
+                        src="{{ asset('storage/images/avant_school_management_system_mockus_android_l.png') }}"
+                        alt="AWE.SOME header">
                 </div>
             </div>
         </div>
         <div class="flex flex-row w-full justify-center pb-12">
-            <x-link-primary href="#about">More Information</x-link-primary>
+            <x-link-primary href="#about">Tell Me More</x-link-primary>
         </div>
     @endsection
     <div id="about" class="w-full min-h-screen flex flex-col justify-center items-center py-12">
         <div class="self-center text-center w-full sm:w-2/3 xl:w-1/2 px-4 sm:px:0">
-            <h2 class="font-bold tracking-wider text-gray-800 text-4xl mb-4">AWE.SOME Heading</h2>
+            <h2 class="font-bold tracking-wider text-gray-800 text-4xl mb-4">A companion for faculties</h2>
             <div class="font-light text-black text-xl">
-                <p>Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros mi.
-                    Pellentesque ac orci mi. Ut dignissim tincidunt ex id tincidunt.
-                    <!-- raw HTML omitted -->
-                    <!-- raw HTML omitted -->
-                    <strong>Vivamus vitae erat vel tellus condimentum consectetur.</strong>
+                <p>A powerful tool for your school, from online fee collection to conducting online exams with e-Report
+                    Cards at the ease of your fingertips from any device at any time.
+                    <strong>Liberating educators from mundane tasks so they can focus on what really matters <span
+                            class="text-wr-primary font-bold text-2xl">Education!</span></strong>
                 </p>
 
             </div>
-            <img class="my-12 max-w-full mx-auto" src="//localhost:1313/img/undraw_asset_selection_ix3v.svg"
-                alt="AWE.SOME">
+            {{-- <img class="my-12 max-w-full mx-auto" src="//localhost:1313/img/undraw_asset_selection_ix3v.svg"
+                alt="AWE.SOME"> --}}
+            <div class="my-12 max-w-full mx-auto">
+                <iframe src="https://www.youtube.com/embed/uS0wO8S340s" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen class="w-full aspect-video"></iframe>
+            </div>
         </div>
         <div class="flex flex-row w-full justify-center">
-            <x-link-primary href="#features">See How it Works</x-link-primary>
+            <x-link-primary href="#features">Show Me The Features</x-link-primary>
         </div>
     </div>
 
-
-
-
-    <div id="features" class="w-full min-h-screen flex flex-col justify-center items-center bg-indigo-800 py-12">
+    <div id="features" class="w-full min-h-screen flex flex-col justify-center items-center bg-gray-800 py-12">
         <div class="self-center text-center w-full sm:w-2/3 xl:w-1/2 px-4 sm:px:0">
-            <h2 class="tracking-wide text-pink-600 font-bold text-4xl mb-4">Most AWE.SOME Features</h2>
+            <h2 class="tracking-wide text-wr-primary font-bold text-4xl mb-4">Most AVANT Features</h2>
             <div class="font-light text-gray-200 text-xl mb-6">
-                <p>Pellentesque ullamcorper fringilla odio at pretium. Interdum et malesuada fames ac ante ipsum
-                    primis in faucibus. Nulla mattis erat dui, ut tempor lectus dictum id.
-                    <!-- raw HTML omitted -->
-                    <!-- raw HTML omitted -->
-                    Cras mattis justo id convallis porta.
+                <p>
+                    Features that make school management a breeze.
+                    Designed to be used by teachers, parents, students and administrators alike.
+                    Full functionality on all devices.
                 </p>
 
             </div>
         </div>
         <div class="self-center w-full xl:w-4/5 flex flex-col sm:flex-row flex-wrap px-4 xl:px:0">
 
-            <div
-                class="w-full sm:w-1/2 flex flex-row flex-no-wrap hover:shadow-lg hover:bg-indigo-600 px-4 sm:px-8 py-6 sm:py-12">
-                <div class="w-1/3 xl:w-1/4">
+            <x-feature>
+                <x-slot name="icon">
                     <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
                         class="w-16 block sm:mx-auto">
-                </div>
-                <div class="w-2/3 xl:w-3/4">
-                    <h3 class="tracking-wide text-pink-600 font-bold text-2xl uppercase mb-2">AWE.SOME Feature
-                        One</h3>
-                    <div class="font-light text-gray-200 text-lg">
-                        <p>Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros
-                            mi. Pellentesque ac orci mi. Ut dignissim tincidunt ex id tincidunt.</p>
+                </x-slot>
+                <x-slot name="title">
+                    Online Exams
+                </x-slot>
+                <x-slot name="description">
+                    <p>
+                        <span class="font-bold">Easily</span> create exams by class or for entire school.
+                        With support for both MCQ and subjective questions.
+                    </p>
+                </x-slot>
+            </x-feature>
 
-                    </div>
-                </div>
-            </div>
-
-            <div
-                class="w-full sm:w-1/2 flex flex-row flex-no-wrap hover:shadow-lg hover:bg-indigo-600 px-4 sm:px-8 py-6 sm:py-12">
-                <div class="w-1/3 xl:w-1/4">
-                    <img src="//localhost:1313/img/features/icon2.svg" alt="AWE.SOME Feature Two"
+            <x-feature>
+                <x-slot name="icon">
+                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
                         class="w-16 block sm:mx-auto">
-                </div>
-                <div class="w-2/3 xl:w-3/4">
-                    <h3 class="tracking-wide text-pink-600 font-bold text-2xl uppercase mb-2">AWE.SOME Feature
-                        Two</h3>
-                    <div class="font-light text-gray-200 text-lg">
-                        <p>Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros
-                            mi. Pellentesque ac orci mi. Ut dignissim tincidunt ex id tincidunt.</p>
+                </x-slot>
+                <x-slot name="title">
+                    Fee Collection
+                </x-slot>
+                <x-slot name="description">
+                    <p>
+                        <span class="font-bold">Flexible</span> online fee collection system with invoice
+                        generation for recurring and one-time fees.
+                    </p>
+                </x-slot>
+            </x-feature>
 
-                    </div>
-                </div>
-            </div>
-
-            <div
-                class="w-full sm:w-1/2 flex flex-row flex-no-wrap hover:shadow-lg hover:bg-indigo-600 px-4 sm:px-8 py-6 sm:py-12">
-                <div class="w-1/3 xl:w-1/4">
-                    <img src="//localhost:1313/img/features/icon3.svg" alt="AWE.SOME Feature 3"
+            <x-feature>
+                <x-slot name="icon">
+                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
                         class="w-16 block sm:mx-auto">
-                </div>
-                <div class="w-2/3 xl:w-3/4">
-                    <h3 class="tracking-wide text-pink-600 font-bold text-2xl uppercase mb-2">AWE.SOME Feature 3
-                    </h3>
-                    <div class="font-light text-gray-200 text-lg">
-                        <p>Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros
-                            mi. Pellentesque ac orci mi. Ut dignissim tincidunt ex id tincidunt.</p>
+                </x-slot>
+                <x-slot name="title">
+                    SMS ALERTS
+                </x-slot>
+                <x-slot name="description">
+                    <p>
+                        <span class="font-bold">Send</span> bulk SMS alerts to parents, students and teachers and
+                        get notified instantly.
+                    </p>
+                </x-slot>
+            </x-feature>
 
-                    </div>
-                </div>
-            </div>
-
-            <div
-                class="w-full sm:w-1/2 flex flex-row flex-no-wrap hover:shadow-lg hover:bg-indigo-600 px-4 sm:px-8 py-6 sm:py-12">
-                <div class="w-1/3 xl:w-1/4">
-                    <img src="//localhost:1313/img/features/icon4.svg" alt="AWE.SOME Feature 4"
+            <x-feature>
+                <x-slot name="icon">
+                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
                         class="w-16 block sm:mx-auto">
-                </div>
-                <div class="w-2/3 xl:w-3/4">
-                    <h3 class="tracking-wide text-pink-600 font-bold text-2xl uppercase mb-2">AWE.SOME Feature 4
-                    </h3>
-                    <div class="font-light text-gray-200 text-lg">
-                        <p>Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros
-                            mi. Pellentesque ac orci mi. Ut dignissim tincidunt ex id tincidunt.</p>
+                </x-slot>
+                <x-slot name="title">
+                    STUDENT ATTENDANCE
+                </x-slot>
+                <x-slot name="description">
+                    <p>
+                        <span class="font-bold">Take</span> attendance of students with ease and send absentee
+                        alerts to parents.
+                    </p>
+                </x-slot>
+            </x-feature>
 
-                    </div>
-                </div>
-            </div>
-
-            <div
-                class="w-full sm:w-1/2 flex flex-row flex-no-wrap hover:shadow-lg hover:bg-indigo-600 px-4 sm:px-8 py-6 sm:py-12">
-                <div class="w-1/3 xl:w-1/4">
-                    <img src="//localhost:1313/img/features/icon5.svg" alt="AWE.SOME Feature Five"
+            <x-feature>
+                <x-slot name="icon">
+                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
                         class="w-16 block sm:mx-auto">
-                </div>
-                <div class="w-2/3 xl:w-3/4">
-                    <h3 class="tracking-wide text-pink-600 font-bold text-2xl uppercase mb-2">AWE.SOME Feature
-                        Five</h3>
-                    <div class="font-light text-gray-200 text-lg">
-                        <p>Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros
-                            mi. Pellentesque ac orci mi. Ut dignissim tincidunt ex id tincidunt.</p>
+                </x-slot>
+                <x-slot name="title">
+                    SYLLABUS
+                </x-slot>
+                <x-slot name="description">
+                    <p>
+                        <span class="font-bold">Track</span> class-wise sallubus with ease. Assign teachers to
+                        classes and keep track of their progress.
+                    </p>
+                </x-slot>
+            </x-feature>
 
-                    </div>
-                </div>
-            </div>
-
-            <div
-                class="w-full sm:w-1/2 flex flex-row flex-no-wrap hover:shadow-lg hover:bg-indigo-600 px-4 sm:px-8 py-6 sm:py-12">
-                <div class="w-1/3 xl:w-1/4">
-                    <img src="//localhost:1313/img/features/icon6.svg" alt="AWE.SOME Feature Six"
+            <x-feature>
+                <x-slot name="icon">
+                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
                         class="w-16 block sm:mx-auto">
-                </div>
-                <div class="w-2/3 xl:w-3/4">
-                    <h3 class="tracking-wide text-pink-600 font-bold text-2xl uppercase mb-2">AWE.SOME Feature
-                        Six</h3>
-                    <div class="font-light text-gray-200 text-lg">
-                        <p>Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros
-                            mi. Pellentesque ac orci mi. Ut dignissim tincidunt ex id tincidunt.</p>
+                </x-slot>
+                <x-slot name="title">
+                    HOMEWORKS
+                </x-slot>
+                <x-slot name="description">
+                    <p>
+                        <span class="font-bold">Create</span> homeworks and assignments for students.
+                    </p>
+                </x-slot>
+            </x-feature>
 
-                    </div>
-                </div>
-            </div>
-
-            <div
-                class="w-full sm:w-1/2 flex flex-row flex-no-wrap hover:shadow-lg hover:bg-indigo-600 px-4 sm:px-8 py-6 sm:py-12">
-                <div class="w-1/3 xl:w-1/4">
-                    <img src="//localhost:1313/img/features/icon7.svg" alt="AWE.SOME Feature 7"
+            <x-feature>
+                <x-slot name="icon">
+                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
                         class="w-16 block sm:mx-auto">
-                </div>
-                <div class="w-2/3 xl:w-3/4">
-                    <h3 class="tracking-wide text-pink-600 font-bold text-2xl uppercase mb-2">AWE.SOME Feature 7
-                    </h3>
-                    <div class="font-light text-gray-200 text-lg">
-                        <p>Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros
-                            mi. Pellentesque ac orci mi. Ut dignissim tincidunt ex id tincidunt.</p>
+                </x-slot>
+                <x-slot name="title">
+                    e-Admit Card
+                </x-slot>
+                <x-slot name="description">
+                    <p>
+                        <span class="font-bold">Generate</span> e-Admit Card for both online and offline exams with
+                        detailed exam schedule.
+                    </p>
+                </x-slot>
+            </x-feature>
 
-                    </div>
-                </div>
-            </div>
-
-            <div
-                class="w-full sm:w-1/2 flex flex-row flex-no-wrap hover:shadow-lg hover:bg-indigo-600 px-4 sm:px-8 py-6 sm:py-12">
-                <div class="w-1/3 xl:w-1/4">
-                    <img src="//localhost:1313/img/features/icon8.svg" alt="AWE.SOME Feature 8"
+            <x-feature>
+                <x-slot name="icon">
+                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
                         class="w-16 block sm:mx-auto">
-                </div>
-                <div class="w-2/3 xl:w-3/4">
-                    <h3 class="tracking-wide text-pink-600 font-bold text-2xl uppercase mb-2">AWE.SOME Feature 8
-                    </h3>
-                    <div class="font-light text-gray-200 text-lg">
-                        <p>Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros
-                            mi. Pellentesque ac orci mi. Ut dignissim tincidunt ex id tincidunt.</p>
+                </x-slot>
+                <x-slot name="title">
+                    Report Card
+                </x-slot>
+                <x-slot name="description">
+                    <p>
+                        <span class="font-bold">Quickly</span> prepare student's report cards for offline exams.
+                        Report cards for online exams are generated <span class="font-bold">automatically</span> at
+                        the click of a button.
+                    </p>
+                </x-slot>
+            </x-feature>
 
-                    </div>
-                </div>
-            </div>
+            <x-feature>
+                <x-slot name="icon">
+                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
+                        class="w-16 block sm:mx-auto">
+                </x-slot>
+                <x-slot name="title">
+                    Applications
+                </x-slot>
+                <x-slot name="description">
+                    <p>
+                        <span class="font-bold">Recieve</span> leave applications online and approve or reject them
+                        with ease.
+                    </p>
+                </x-slot>
+            </x-feature>
+
+            <x-feature>
+                <x-slot name="icon">
+                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
+                        class="w-16 block sm:mx-auto">
+                </x-slot>
+                <x-slot name="title">
+                    Reports
+                </x-slot>
+                <x-slot name="description">
+                    <p>
+                        <span class="font-bold">Detailed</span> reports of students, teachers, parents and school
+                        in both pdf and excel formats.
+                    </p>
+                </x-slot>
+            </x-feature>
 
         </div>
         <div class="self-center text-center w-full sm:w-1/3 px-4 sm:px:0">
-            <h3 class="font-bold tracking-widest text-pink-600 text-2xl my-6">...and so much more!</h3>
+            <h3 class="font-bold tracking-widest text-wr-primary text-2xl my-6">...and so much more!</h3>
         </div>
         <div class="flex flex-row w-full justify-center pt-6">
-            <x-link-primary href="#register">Register Now</x-link-primary>
+            <x-link-primary href="#gallery">Show Me</x-link-primary>
         </div>
     </div>
 
+    <div id="gallery" class="w-full min-h-screen flex flex-col justify-center items-center py-12">
+        <div class="self-center w-full xl:w-4/5 px-4 sm:px:0">
 
+            <div class="flex flex-col sm:flex-row flex-wrap xl:px:0">
+                <div class="w-full sm:w-1/2  sm:px-8 mt-auto mb-auto">
+                    <h3 class="text-2xl font-bold">
+                        Highly Accesible
+                    </h3>
+                    <p>
+                        A <strong>Mobile First</strong> design that is highly accessible to all devices. You can access
+                        it using a browser or install the app.
+                    </p>
+                    <div class="flex flex-col sm:flex-row flex-wrap">
+                        <div class="w-full flex flex-col sm:flex-row">
+                            <x-feature-alternate>
+                                <x-slot name="icon">
+                                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
+                                        class="w-16 block sm:mx-auto">
+                                </x-slot>
+                                <x-slot name="title">
+                                    PWA
+                                </x-slot>
+                                <x-slot name="description">
+                                    <p>
+                                        Designed as a Progressive Web Application (PWA) it is compatible with Android,
+                                        iOS, Windows and Linux.
+                                    </p>
+                                </x-slot>
+                            </x-feature-alternate>
+                            <x-feature-alternate>
+                                <x-slot name="icon">
+                                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
+                                        class="w-16 block sm:mx-auto">
+                                </x-slot>
+                                <x-slot name="title">
+                                    White Label
+                                </x-slot>
+                                <x-slot name="description">
+                                    <p>
+                                        The app is designed to be used by educational institutions with their own
+                                        branding.
+                                    </p>
+                                </x-slot>
+                            </x-feature-alternate>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/2  xl:px-8">
+                    <div id="lightgallery">
+                        <a data-sub-html="Send bulk SMS to absentees"
+                            href="{{ asset('storage/images/avant_school_management_system_mockus_android_l.png') }}">
+                            <img class="object-cover h-48 inline mb-2"
+                                alt="avant_school_management_system_mockus_android_l"
+                                src="{{ asset('storage/images/avant_school_management_system_mockus_android_l.png') }}" />
+                        </a>
+                        <a data-sub-html="Principal's dashboard"
+                            href="{{ asset('storage/images/avant_school_management_system_mockus_android_p.png') }}">
+                            <img class="object-cover h-48 inline mb-2"
+                                alt="avant_school_management_system_mockus_android_p"
+                                src="{{ asset('storage/images/avant_school_management_system_mockus_android_p.png') }}" />
+                        </a>
+                        <a data-sub-html="Login page"
+                            href="{{ asset('storage/images/avant_school_management_system_screen_shot_LOGIN.png') }}">
+                            <img class="object-cover h-48 inline mb-2"
+                                alt="avant_school_management_system_screen_shot_LOGIN"
+                                src="{{ asset('storage/images/avant_school_management_system_screen_shot_LOGIN.png') }}" />
+                        </a>
+                        <a data-sub-html="Prepqre online/offline exam questions"
+                            href="{{ asset('storage/images/avant_school_management_system_screenshots_01.png') }}">
+                            <img class="object-cover h-48 inline mb-2"
+                                alt="avant_school_management_system_screenshots_01"
+                                src="{{ asset('storage/images/avant_school_management_system_screenshots_01.png') }}" />
+                        </a>
+                        <a data-sub-html="Students online exam on tablet"
+                            href="{{ asset('storage/images/avant_school_management_system_screenshots_02.png') }}">
+                            <img class="object-cover h-48 inline mb-2"
+                                alt="avant_school_management_system_screenshots_02"
+                                src="{{ asset('storage/images/avant_school_management_system_screenshots_02.png') }}" />
+                        </a>
+                        <a data-sub-html="Students online exam on mobile"
+                            href="{{ asset('storage/images/avant_school_management_system_screenshots_03.png') }}">
+                            <img class="object-cover h-48 inline mb-2"
+                                alt="avant_school_management_system_screenshots_03"
+                                src="{{ asset('storage/images/avant_school_management_system_screenshots_03.png') }}" />
+                        </a>
+                        <a data-sub-html="Admit card(for offline exam) and exam routine"
+                            href="{{ asset('storage/images/avant_school_management_system_screenshots_04.png') }}">
+                            <img class="object-cover h-48 inline mb-2"
+                                alt="avant_school_management_system_screenshots_04"
+                                src="{{ asset('storage/images/avant_school_management_system_screenshots_04.png') }}" />
+                        </a>
+                        <a data-sub-html="Students online exam on mobile with descriptive questions"
+                            href="{{ asset('storage/images/avant_school_management_system_screenshots_05.png') }}">
+                            <img class="object-cover h-48 inline mb-2"
+                                alt="avant_school_management_system_screenshots_05"
+                                src="{{ asset('storage/images/avant_school_management_system_screenshots_05.png') }}" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="flex flex-row w-full justify-center mt-16">
+            <x-link-primary href="#register">Get In Touch</x-link-primary>
+        </div>
+    </div>
 
     <div id="register" class="w-full min-h-screen flex flex-col justify-center items-center bg-gray-800">
         <div class="self-center text-center w-full xl:w-1/3 px-4 sm:px:0">
-            <h2 class="font-bold tracking-widest text-gray-200 text-4xl mb-4">Registration</h2>
+            <h2 class="font-bold tracking-widest text-gray-200 text-4xl mb-4">Contact Us</h2>
             <div class="font-light text-gray-400 text-xl">
-                <p>Maecenas pulvinar ultricies dolor, vitae sagittis nunc aliquam non. Cras vitae eros mi.</p>
-
+                <p>Please enter your details so we can reach out to you</p>
             </div>
             <form class="w-full max-w-lg my-20 mx-auto" action="#" method="post" id="registration-form" target="_blank"
                 validate>
                 <div class="flex items-center border-b border-primary py-2">
                     <input
                         class="appearance-none bg-transparent border border-transparent w-full text-gray-200 focus:outline-none focus:bg-gray-400 focus:text-gray-800 focus:border-gray-400 mr-3 py-2 px-3"
-                        type="email" value="" name="EMAIL" placeholder="sheldon.cooper@liamg.com"
+                        type="text" value="" name="name" placeholder="Name"
+                        aria-label="Name" required>
+                </div>
+                <div class="flex items-center border-b border-primary py-2">
+                    <input
+                        class="appearance-none bg-transparent border border-transparent w-full text-gray-200 focus:outline-none focus:bg-gray-400 focus:text-gray-800 focus:border-gray-400 mr-3 py-2 px-3"
+                        type="number" value="" name="phone" placeholder="Phone"
+                        aria-label="Phone" required>
+                </div>
+                <div class="flex items-center border-b border-primary py-2">
+                    <input
+                        class="appearance-none bg-transparent border border-transparent w-full text-gray-200 focus:outline-none focus:bg-gray-400 focus:text-gray-800 focus:border-gray-400 mr-3 py-2 px-3"
+                        type="email" value="" name="EMAIL" placeholder="Email"
                         aria-label="Email Address" required>
-                    <x-button-primary type="submit" name="subscribe">Sign Up</x-button-primary>
+                    <x-button-primary type="submit" name="subscribe">Submit</x-button-primary>
                 </div>
                 <label class="block text-gray-200 text-left px-2 mt-4" for="gdpr_37169">
                     <input class="leading-tight" type="checkbox" id="gdpr_37169" name="gdpr[37169]" value="Y" required>
@@ -321,4 +470,18 @@
             </form>
         </div>
     </div>
+
+    @section('scripts')
+        <script src="{{ mix('js/lightgallery.js') }}" defer></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                lightGallery(document.getElementById('lightgallery'), {
+                    plugins: [lgZoom, lgThumbnail],
+                    speed: 500,
+                    thumbnail: true,
+                    rowHeight: 180,
+                });
+            })
+        </script>
+    @endsection
 </x-site-layout>

@@ -2,6 +2,8 @@
     "/js/app.js": "/js/app.js",
     "/js/tippy.js": "/js/tippy.js",
     "/js/popper.js": "/js/popper.js",
+    "/js/lightgallery.js": "/js/lightgallery.js",
+    "/css/lightgallery-bundle.css": "/css/lightgallery-bundle.css",
     "/css/tippy.css": "/css/tippy.css",
     "/css/normalize.css": "/css/normalize.css",
     "/css/page.css": "/css/page.css",
