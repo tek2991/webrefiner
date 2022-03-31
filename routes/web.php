@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('public.pages.welcome');
 })->name('home');
 
+Route::get('/privacy', function () {
+    return view('public.pages.privacy');
+})->name('privacy');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');

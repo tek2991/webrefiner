@@ -440,24 +440,38 @@
             </div>
             <form class="w-full max-w-lg my-20 mx-auto" action="#" method="post" id="registration-form" target="_blank"
                 validate>
-                <div class="flex items-center border-b border-primary py-2">
-                    <input
-                        class="appearance-none bg-transparent border border-transparent w-full text-gray-200 focus:outline-none focus:bg-gray-400 focus:text-gray-800 focus:border-gray-400 mr-3 py-2 px-3"
-                        type="text" value="" name="name" placeholder="Name"
-                        aria-label="Name" required>
+                <div class="flex items-center mb-4">
+                    <div class="w-full text-left">
+                        <label for="name" class="text-gray-200 font-semibold">
+                            Name
+                        </label>
+                        <input
+                            class="rounded appearance-none border w-full text-gray-200 focus:outline-none focus:text-gray-800 focus:border-gray-400 py-2 px-3"
+                            id="name" type="name" value="" name="name" placeholder="your good name" aria-label="Name"
+                            required>
+                    </div>
                 </div>
-                <div class="flex items-center border-b border-primary py-2">
-                    <input
-                        class="appearance-none bg-transparent border border-transparent w-full text-gray-200 focus:outline-none focus:bg-gray-400 focus:text-gray-800 focus:border-gray-400 mr-3 py-2 px-3"
-                        type="number" value="" name="phone" placeholder="Phone"
-                        aria-label="Phone" required>
+                <div class="flex items-center mb-4">
+                    <div class="w-full text-left">
+                        <label for="email" class="text-gray-200 font-semibold">
+                            Email
+                        </label>
+                        <input
+                            class="rounded appearance-none border w-full text-gray-200 focus:outline-none focus:text-gray-800 focus:border-gray-400 py-2 px-3"
+                            id="email" type="email" value="" name="email" placeholder="john@awesome.com" aria-label="Email Address"
+                            required>
+                    </div>
                 </div>
-                <div class="flex items-center border-b border-primary py-2">
-                    <input
-                        class="appearance-none bg-transparent border border-transparent w-full text-gray-200 focus:outline-none focus:bg-gray-400 focus:text-gray-800 focus:border-gray-400 mr-3 py-2 px-3"
-                        type="email" value="" name="EMAIL" placeholder="Email"
-                        aria-label="Email Address" required>
-                    <x-button-primary type="submit" name="subscribe">Submit</x-button-primary>
+                <div class="flex items-center mb-4">
+                    <div class="w-full text-left">
+                        <label for="phone" class="text-gray-200 font-semibold">
+                            Phone
+                        </label>
+                        <input
+                            class="rounded appearance-none border w-full text-gray-200 focus:outline-none focus:text-gray-800 focus:border-gray-400 py-2 px-3"
+                            id="phone" type="number" value="" name="phone" placeholder="+91(India)" aria-label="Phone"
+                            required>
+                    </div>
                 </div>
                 <label class="block text-gray-200 text-left px-2 mt-4" for="gdpr_37169">
                     <input class="leading-tight" type="checkbox" id="gdpr_37169" name="gdpr[37169]" value="Y" required>
@@ -467,6 +481,9 @@
                             target="_blank">Privacy Policy</a>
                     </span>
                 </label>
+                <div class="text-left mt-4">
+                    <x-button-primary type="submit" name="subscribe">Submit</x-button-primary>
+                </div>
             </form>
         </div>
     </div>

@@ -29,7 +29,7 @@
     <div id="site">
         <main>
             @yield('styles')
-            <div class="header w-full min-h-screen flex flex-col justify-between">
+            <div class="header w-full flex flex-col justify-between">
                 @include('public.layouts.navigation')
                 @yield('hero')
             </div>
