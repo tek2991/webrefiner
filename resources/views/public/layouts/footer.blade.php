@@ -28,7 +28,7 @@
     <div class="text-center pl-0 sm:pl-8 py-4">
         <ul class="list-none">
             <li>
-                <x-link-footer href="#">Privacy</x-link-footer>
+                <x-link-footer href="{{ route('privacy') }}">Privacy</x-link-footer>
             </li>
             <li>
                 <x-link-footer href="#">Imprint</x-link-footer>

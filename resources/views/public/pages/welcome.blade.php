@@ -476,9 +476,8 @@
                 <label class="block text-gray-200 text-left px-2 mt-4" for="gdpr_37169">
                     <input class="leading-tight" type="checkbox" id="gdpr_37169" name="gdpr[37169]" value="Y" required>
                     <span class="text-md font-light">
-                        I agree with the <a href="//localhost:1313/privacy"
-                            class="underline hover:no-underline hover:text-light" title="Privacy Policy"
-                            target="_blank">Privacy Policy</a>
+                        I agree with the <a href="{{ route('privacy') }}"
+                            class="underline hover:no-underline hover:text-light" title="Privacy Policy">Privacy Policy</a>
                     </span>
                 </label>
                 <div class="text-left mt-4">
