@@ -90,19 +90,19 @@
                     <h1 class="tracking-wide text-wr-primary text-2xl mb-6">Avant <span
                             class="text-gray-800 font-bold tracking tracking-widest block sm:inline-block">School Management
                             System</span></h1>
-                    <h2 class="font-bold tracking-widest text-4xl">Empowering faculties with</h1>
-                        <span class="content__container block font-light text-browngray text-2xl my-6">
-                            <ul class="content__container__list text-wr-primary font-medium">
-                                <li class="content__container__list__item xl:pl-3">Online Exams</li>
-                                <li class="content__container__list__item xl:pl-3">e-Report Cards</li>
-                                <li class="content__container__list__item xl:pl-3">Digital Attendance</li>
-                                <li class="content__container__list__item xl:pl-3">Fee Collections</li>
-                                <li class="content__container__list__item xl:pl-3">SMS alerts</li>
-                                <li class="content__container__list__item xl:pl-3">Syllabus Tracking</li>
-                                <li class="content__container__list__item xl:pl-3">Homeworks</li>
-                            </ul>
-                        </span>
-                        <p class="font-bold tracking-widest text-4xl">... and more!</p>
+                    <h2 class="font-bold tracking-widest text-4xl">Empowering faculties with</h2>
+                    <span class="content__container block font-light text-browngray text-2xl my-6">
+                        <ul class="content__container__list text-wr-primary font-medium">
+                            <li class="content__container__list__item xl:pl-3">Online Exams</li>
+                            <li class="content__container__list__item xl:pl-3">e-Report Cards</li>
+                            <li class="content__container__list__item xl:pl-3">Digital Attendance</li>
+                            <li class="content__container__list__item xl:pl-3">Fee Collections</li>
+                            <li class="content__container__list__item xl:pl-3">SMS alerts</li>
+                            <li class="content__container__list__item xl:pl-3">Syllabus Tracking</li>
+                            <li class="content__container__list__item xl:pl-3">Homeworks</li>
+                        </ul>
+                    </span>
+                    <p class="font-bold tracking-widest text-4xl">... and more!</p>
                 </div>
                 <div class="w-full sm:w-1/2 sm:text-right">
                     <img class="hidden sm:inline-block"
@@ -158,7 +158,7 @@
 
             <x-feature>
                 <x-slot name="icon">
-                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
+                    <img src="{{ asset('storage/images/online-test.png') }}" alt="Online Exams"
                         class="w-16 block sm:mx-auto">
                 </x-slot>
                 <x-slot name="title">
@@ -174,7 +174,7 @@
 
             <x-feature>
                 <x-slot name="icon">
-                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
+                    <img src="{{ asset('storage/images/cashless-payment.png') }}" alt="Online Fee Collection"
                         class="w-16 block sm:mx-auto">
                 </x-slot>
                 <x-slot name="title">
@@ -190,7 +190,7 @@
 
             <x-feature>
                 <x-slot name="icon">
-                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
+                    <img src="{{ asset('storage/images/sms.png') }}" alt="Bulk SMS alerts"
                         class="w-16 block sm:mx-auto">
                 </x-slot>
                 <x-slot name="title">
@@ -206,7 +206,7 @@
 
             <x-feature>
                 <x-slot name="icon">
-                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
+                    <img src="{{ asset('storage/images/attendance.png') }}" alt="Digital Attendance"
                         class="w-16 block sm:mx-auto">
                 </x-slot>
                 <x-slot name="title">
@@ -222,7 +222,7 @@
 
             <x-feature>
                 <x-slot name="icon">
-                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
+                    <img src="{{ asset('storage/images/online-learning.png') }}" alt="Sallybus"
                         class="w-16 block sm:mx-auto">
                 </x-slot>
                 <x-slot name="title">
@@ -238,7 +238,7 @@
 
             <x-feature>
                 <x-slot name="icon">
-                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
+                    <img src="{{ asset('storage/images/homework.png') }}" alt="Homework"
                         class="w-16 block sm:mx-auto">
                 </x-slot>
                 <x-slot name="title">
@@ -253,7 +253,7 @@
 
             <x-feature>
                 <x-slot name="icon">
-                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
+                    <img src="{{ asset('storage/images/letter.png') }}" alt="e Admit Card"
                         class="w-16 block sm:mx-auto">
                 </x-slot>
                 <x-slot name="title">
@@ -269,7 +269,7 @@
 
             <x-feature>
                 <x-slot name="icon">
-                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
+                    <img src="{{ asset('storage/images/business-credit-score.png') }}" alt="Report Card"
                         class="w-16 block sm:mx-auto">
                 </x-slot>
                 <x-slot name="title">
@@ -286,7 +286,7 @@
 
             <x-feature>
                 <x-slot name="icon">
-                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
+                    <img src="{{ asset('storage/images/website.png') }}" alt="Leave Application"
                         class="w-16 block sm:mx-auto">
                 </x-slot>
                 <x-slot name="title">
@@ -302,8 +302,7 @@
 
             <x-feature>
                 <x-slot name="icon">
-                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
-                        class="w-16 block sm:mx-auto">
+                    <img src="{{ asset('storage/images/monitor.png') }}" alt="Reports" class="w-16 block sm:mx-auto">
                 </x-slot>
                 <x-slot name="title">
                     Reports
@@ -341,7 +340,7 @@
                         <div class="w-full flex flex-col sm:flex-row">
                             <x-feature-alternate>
                                 <x-slot name="icon">
-                                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
+                                    <img src="{{ asset('storage/images/app-development.png') }}" alt="PWA"
                                         class="w-16 block sm:mx-auto">
                                 </x-slot>
                                 <x-slot name="title">
@@ -356,7 +355,7 @@
                             </x-feature-alternate>
                             <x-feature-alternate>
                                 <x-slot name="icon">
-                                    <img src="//localhost:1313/img/features/icon1.svg" alt="AWE.SOME Feature One"
+                                    <img src="{{ asset('storage/images/brand.png') }}" alt="Branding"
                                         class="w-16 block sm:mx-auto">
                                 </x-slot>
                                 <x-slot name="title">
@@ -458,8 +457,8 @@
                         </label>
                         <input
                             class="rounded appearance-none border w-full text-gray-200 focus:outline-none focus:text-gray-800 focus:border-gray-400 py-2 px-3"
-                            id="email" type="email" value="" name="email" placeholder="john@awesome.com" aria-label="Email Address"
-                            required>
+                            id="email" type="email" value="" name="email" placeholder="john@awesome.com"
+                            aria-label="Email Address" required>
                     </div>
                 </div>
                 <div class="flex items-center mb-4">
@@ -477,7 +476,8 @@
                     <input class="leading-tight" type="checkbox" id="gdpr_37169" name="gdpr[37169]" value="Y" required>
                     <span class="text-md font-light">
                         I agree with the <a href="{{ route('privacy') }}"
-                            class="underline hover:no-underline hover:text-light" title="Privacy Policy">Privacy Policy</a>
+                            class="underline hover:no-underline hover:text-light" title="Privacy Policy">Privacy
+                            Policy</a>
                     </span>
                 </label>
                 <div class="text-left mt-4">

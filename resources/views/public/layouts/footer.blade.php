@@ -31,7 +31,7 @@
                 <x-link-footer href="{{ route('privacy') }}">Privacy</x-link-footer>
             </li>
             <li>
-                <x-link-footer href="#">Imprint</x-link-footer>
+                <x-link-footer href="https://www.flaticon.com" target="_blank">Icons by Flaticon</x-link-footer>
             </li>
         </ul>
     </div>

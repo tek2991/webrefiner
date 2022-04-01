@@ -21,6 +21,10 @@ Route::get('/privacy', function () {
     return view('public.pages.privacy');
 })->name('privacy');
 
+Route::get('/about', function () {
+    return view('public.pages.about');
+})->name('about');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
