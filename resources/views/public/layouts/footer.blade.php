@@ -2,26 +2,28 @@
     <div class="text-center pr-0 sm:pr-8 py-4">
         <ul class="list-none">
 
-            <li>
+            {{-- <li>
                 <x-link-footer href="https://twitter.com/#" target="_blank" rel="_noopener">Twitter</x-link-footer>
             </li>
 
             <li>
                 <x-link-footer href="https://linkedin.com/company/#" target="_blank" rel="_noopener">LinkedIn
                 </x-link-footer>
+            </li> --}}
+            <li>
+                <x-link-footer href="{{ route('home') }}">Home</x-link-footer>
             </li>
-
         </ul>
     </div>
     <div class="h-px sm:h-auto w-1/2 sm:w-px bg-wr-primary mx-auto sm:mx-0"></div>
     <div class="text-center px-8 py-4">
         <ul class="list-none">
             <li>
-                <x-link-footer href="#about">About</x-link-footer>
+                <x-link-footer href="{{ route('about') }}">About</x-link-footer>
             </li>
-            <li>
+            {{-- <li>
                 <x-link-footer href="#features">Features</x-link-footer>
-            </li>
+            </li> --}}
         </ul>
     </div>
     <div class="h-px sm:h-auto w-1/2 sm:w-px bg-wr-primary mx-auto sm:mx-0"></div>
@@ -29,9 +31,6 @@
         <ul class="list-none">
             <li>
                 <x-link-footer href="{{ route('privacy') }}">Privacy</x-link-footer>
-            </li>
-            <li>
-                <x-link-footer href="https://www.flaticon.com" target="_blank">Icons by Flaticon</x-link-footer>
             </li>
         </ul>
     </div>

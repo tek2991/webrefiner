@@ -437,8 +437,9 @@
             <div class="font-light text-gray-400 text-xl">
                 <p>Please enter your details so we can reach out to you</p>
             </div>
-            <form class="w-full max-w-lg my-20 mx-auto" action="#" method="post" id="registration-form" target="_blank"
-                validate>
+            <form class="w-full max-w-lg my-20 mx-auto" action="{{ route('contact.store') }}" method="post"
+                id="registration-form" validate>
+                @csrf
                 <div class="flex items-center mb-4">
                     <div class="w-full text-left">
                         <label for="name" class="text-gray-200 font-semibold">
@@ -472,8 +473,8 @@
                             required>
                     </div>
                 </div>
-                <label class="block text-gray-200 text-left px-2 mt-4" for="gdpr_37169">
-                    <input class="leading-tight" type="checkbox" id="gdpr_37169" name="gdpr[37169]" value="Y" required>
+                <label class="block text-gray-200 text-left px-2 mt-4" for="gdpr">
+                    <input class="leading-tight" type="checkbox" id="gdpr" name="gdpr" value="true" required>
                     <span class="text-md font-light">
                         I agree with the <a href="{{ route('privacy') }}"
                             class="underline hover:no-underline hover:text-light" title="Privacy Policy">Privacy

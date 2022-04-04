@@ -19,22 +19,57 @@
     @endsection
     @section('hero')
         <div class="flex flex-col justify-center h-full py-12">
-            <div class="self-center items-center flex flex-col sm:flex-row w-full md:w-5/6 xl:w-2/3 px-4 sm:px-0">
+            <div
+                class="self-center items-center flex justify-between flex-col sm:flex-row w-full md:w-5/6 xl:w-2/3 px-4 sm:px-0">
                 <div class="w-full text-center sm:text-left sm:w-1/2 py-12 sm:pr-6">
                     <h1 class="tracking-wide text-wr-primary text-2xl font-bold mb-6">How we began</h1>
-                    <p class="tracking-widest text-xl">Teachers provide the power of education to today's youth, thereby giving them the possibility for a better future. Teachers simplify the complex, and make abstract concepts accessible to students.
-
-                    However to
+                    <p class="tracking-widest">
+                        <span class="font-bold block mb-2">Teachers have to keep track lot of things.</span>
+                        Besides keeping track of the
+                        personal progress of students under their care and coming up with a plan for every one of them,
+                        teachers have to formulate lesson plans, assign homework, and prepare tests, and scorecards, to name
+                        a few.
                     </p>
                 </div>
                 <div class="w-full sm:w-1/2 sm:text-right">
-                    <img src="{{ asset('storage/images/avant_school_management_system_mockus_android_p.png') }}"
+                    <img src="{{ asset('storage/images/busy.svg') }}" alt="AWE.SOME header">
+                </div>
+            </div>
+            <div
+                class="self-center items-center flex justify-between flex-col sm:flex-row w-full md:w-5/6 xl:w-2/3 px-4 sm:px-0">
+                <div class="w-full sm:w-1/2 sm:text-right">
+                    <img src="{{ asset('storage/images/framework.svg') }}"
+                        alt="AWE.SOME header">
+                </div>
+                <div class="w-full text-center sm:text-left sm:w-1/2 py-12 sm:pr-6">
+                    <h1 class="tracking-wide text-wr-primary text-2xl font-bold mb-6">This is a daunting task!</h1>
+                    <p class="tracking-widest">
+                        Avant School Management was designed from the ground up to be an easy
+                        and intuitive tool for educators and students alike.
+                    </p>
+                    <p class="tracking-widest mt-2"> We abstract away the usual dreary processes
+                        involved and provide a simple interface so that teachers can focus more of their time and energy
+                        teaching the students and enjoy doing it.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="self-center items-center flex justify-between flex-col sm:flex-row w-full md:w-5/6 xl:w-2/3 px-4 sm:px-0">
+                <div class="w-full text-center sm:text-left sm:w-1/2 py-12 sm:pr-6">
+                    <h1 class="tracking-wide text-wr-primary text-2xl font-bold mb-6">Going Forward</h1>
+                    <p class="tracking-widest">At Webrefiner, we always strive to do the best we can. Every feature or
+                        functionality in our products solves a practical problem efficiently and intuitively.
+                    </p>
+                    <p class="tracking-widest mt-2">
+                        Currently, we are working on integrating BigBlueButton, a comprehensive digital classroom for our
+                        School Management System.
+                    </p>
+                </div>
+                <div class="w-full sm:w-1/2 sm:text-right">
+                    <img src="{{ asset('storage/images/future.svg') }}"
                         alt="AWE.SOME header">
                 </div>
             </div>
-        </div>
-        <div class="flex flex-row w-full justify-center pb-12">
-            <x-link-primary href="#about">Tell Me More</x-link-primary>
         </div>
     @endsection
 

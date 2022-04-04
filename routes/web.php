@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,8 @@ Route::get('/privacy', function () {
 Route::get('/about', function () {
     return view('public.pages.about');
 })->name('about');
+
+Route::post('/contact', [ContactController::class, 'post'])->name('contact.store');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
