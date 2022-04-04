@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactEmail;
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -18,5 +20,7 @@ class ContactController extends Controller
         $data = $request->only(['name', 'email', 'phone']);
 
         Contact::create($data);
+
+        Mail::to($request->email)->send(new ContactEmail($data));
     }
 }
