@@ -32,13 +32,13 @@
                     </p>
                 </div>
                 <div class="w-full sm:w-1/2 sm:text-right">
-                    <img src="{{ asset('storage/images/busy.svg') }}" alt="AWE.SOME header">
+                    <img src="{{ asset('images/static/busy.svg') }}" alt="AWE.SOME header">
                 </div>
             </div>
             <div
                 class="self-center items-center flex justify-between flex-col sm:flex-row w-full md:w-5/6 xl:w-2/3 px-4 sm:px-0">
                 <div class="w-full sm:w-1/2 sm:text-right">
-                    <img src="{{ asset('storage/images/framework.svg') }}"
+                    <img src="{{ asset('images/static/framework.svg') }}"
                         alt="AWE.SOME header">
                 </div>
                 <div class="w-full text-center sm:text-left sm:w-1/2 py-12 sm:pr-6">
@@ -66,7 +66,7 @@
                     </p>
                 </div>
                 <div class="w-full sm:w-1/2 sm:text-right">
-                    <img src="{{ asset('storage/images/future.svg') }}"
+                    <img src="{{ asset('images/static/future.svg') }}"
                         alt="AWE.SOME header">
                 </div>
             </div>
@@ -79,7 +79,7 @@
             <div class="font-light text-gray-400 text-xl">
                 <p>Please enter your details so we can reach out to you</p>
             </div>
-            <form class="w-full max-w-lg my-20 mx-auto" action="#" method="post" id="registration-form" target="_blank"
+            <form class="w-full max-w-lg my-20 mx-auto" action="#" method="post" id="registration-form"
                 validate>
                 <div class="flex items-center mb-4">
                     <div class="w-full text-left">

@@ -168,7 +168,7 @@
             <div class="font-light text-gray-400 text-xl">
                 <p>Please enter your details so we can reach out to you</p>
             </div>
-            <form class="w-full max-w-lg my-20 mx-auto" action="#" method="post" id="registration-form" target="_blank"
+            <form class="w-full max-w-lg my-20 mx-auto" action="#" method="post" id="registration-form"
                 validate>
                 <div class="flex items-center mb-4">
                     <div class="w-full text-left">

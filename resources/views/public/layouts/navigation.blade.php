@@ -2,7 +2,7 @@
     class="flex flex-col sm:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-white sm:bg-transparent shadow sm:shadow-none border-t-4 border-wr-primary">
     <div
         class="w-full sm:w-auto self-start sm:self-center flex flex-row sm:flex-none flex-no-wrap justify-between items-center">
-        <a href="{{ route('home') }}" class="no-underline"><img src="{{ asset('storage/images/logo.png') }}"
+        <a href="{{ route('home') }}" class="no-underline"><img src="{{ asset('images/static/logo.png') }}"
                 alt="Webrefiner Logo" class="h-12 py-1"></a>
         <button id="menuBtn" class="hamburger block sm:hidden focus:outline-none" type="button" onclick="navToggle();"
             aria-label="Show Menu">

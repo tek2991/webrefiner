@@ -23,6 +23,6 @@ class ContactController extends Controller
 
         Mail::to($request->email)->send(new ContactEmail($data));
 
-        return redirect()->back()->with('success', 'Your request has been s. We will get back to you as soon as possible.');
+        return redirect()->back()->with('success', 'Your request has been submitted. We will get back to you as soon as possible.');
     }
 }

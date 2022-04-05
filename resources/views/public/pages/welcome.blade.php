@@ -106,10 +106,10 @@
                 </div>
                 <div class="w-full sm:w-1/2 sm:text-right">
                     <img class="hidden sm:inline-block"
-                        src="{{ asset('storage/images/avant_school_management_system_mockus_android_p.png') }}"
+                        src="{{ asset('images/static/avant_school_management_system_mockus_android_p.png') }}"
                         alt="AWE.SOME header">
                     <img class="inline-block sm:hidden"
-                        src="{{ asset('storage/images/avant_school_management_system_mockus_android_l.png') }}"
+                        src="{{ asset('images/static/avant_school_management_system_mockus_android_l.png') }}"
                         alt="AWE.SOME header">
                 </div>
             </div>
@@ -158,7 +158,7 @@
 
             <x-feature>
                 <x-slot name="icon">
-                    <img src="{{ asset('storage/images/online-test.png') }}" alt="Online Exams"
+                    <img src="{{ asset('images/static/online-test.png') }}" alt="Online Exams"
                         class="w-16 block sm:mx-auto">
                 </x-slot>
                 <x-slot name="title">
@@ -174,7 +174,7 @@
 
             <x-feature>
                 <x-slot name="icon">
-                    <img src="{{ asset('storage/images/cashless-payment.png') }}" alt="Online Fee Collection"
+                    <img src="{{ asset('images/static/cashless-payment.png') }}" alt="Online Fee Collection"
                         class="w-16 block sm:mx-auto">
                 </x-slot>
                 <x-slot name="title">
@@ -190,7 +190,7 @@
 
             <x-feature>
                 <x-slot name="icon">
-                    <img src="{{ asset('storage/images/sms.png') }}" alt="Bulk SMS alerts"
+                    <img src="{{ asset('images/static/sms.png') }}" alt="Bulk SMS alerts"
                         class="w-16 block sm:mx-auto">
                 </x-slot>
                 <x-slot name="title">
@@ -206,7 +206,7 @@
 
             <x-feature>
                 <x-slot name="icon">
-                    <img src="{{ asset('storage/images/attendance.png') }}" alt="Digital Attendance"
+                    <img src="{{ asset('images/static/attendance.png') }}" alt="Digital Attendance"
                         class="w-16 block sm:mx-auto">
                 </x-slot>
                 <x-slot name="title">
@@ -222,7 +222,7 @@
 
             <x-feature>
                 <x-slot name="icon">
-                    <img src="{{ asset('storage/images/online-learning.png') }}" alt="Sallybus"
+                    <img src="{{ asset('images/static/online-learning.png') }}" alt="Sallybus"
                         class="w-16 block sm:mx-auto">
                 </x-slot>
                 <x-slot name="title">
@@ -238,7 +238,7 @@
 
             <x-feature>
                 <x-slot name="icon">
-                    <img src="{{ asset('storage/images/homework.png') }}" alt="Homework"
+                    <img src="{{ asset('images/static/homework.png') }}" alt="Homework"
                         class="w-16 block sm:mx-auto">
                 </x-slot>
                 <x-slot name="title">
@@ -253,7 +253,7 @@
 
             <x-feature>
                 <x-slot name="icon">
-                    <img src="{{ asset('storage/images/letter.png') }}" alt="e Admit Card"
+                    <img src="{{ asset('images/static/letter.png') }}" alt="e Admit Card"
                         class="w-16 block sm:mx-auto">
                 </x-slot>
                 <x-slot name="title">
@@ -269,7 +269,7 @@
 
             <x-feature>
                 <x-slot name="icon">
-                    <img src="{{ asset('storage/images/business-credit-score.png') }}" alt="Report Card"
+                    <img src="{{ asset('images/static/business-credit-score.png') }}" alt="Report Card"
                         class="w-16 block sm:mx-auto">
                 </x-slot>
                 <x-slot name="title">
@@ -286,7 +286,7 @@
 
             <x-feature>
                 <x-slot name="icon">
-                    <img src="{{ asset('storage/images/website.png') }}" alt="Leave Application"
+                    <img src="{{ asset('images/static/website.png') }}" alt="Leave Application"
                         class="w-16 block sm:mx-auto">
                 </x-slot>
                 <x-slot name="title">
@@ -302,7 +302,7 @@
 
             <x-feature>
                 <x-slot name="icon">
-                    <img src="{{ asset('storage/images/monitor.png') }}" alt="Reports" class="w-16 block sm:mx-auto">
+                    <img src="{{ asset('images/static/monitor.png') }}" alt="Reports" class="w-16 block sm:mx-auto">
                 </x-slot>
                 <x-slot name="title">
                     Reports
@@ -340,7 +340,7 @@
                         <div class="w-full flex flex-col sm:flex-row">
                             <x-feature-alternate>
                                 <x-slot name="icon">
-                                    <img src="{{ asset('storage/images/app-development.png') }}" alt="PWA"
+                                    <img src="{{ asset('images/static/app-development.png') }}" alt="PWA"
                                         class="w-16 block sm:mx-auto">
                                 </x-slot>
                                 <x-slot name="title">
@@ -355,7 +355,7 @@
                             </x-feature-alternate>
                             <x-feature-alternate>
                                 <x-slot name="icon">
-                                    <img src="{{ asset('storage/images/brand.png') }}" alt="Branding"
+                                    <img src="{{ asset('images/static/brand.png') }}" alt="Branding"
                                         class="w-16 block sm:mx-auto">
                                 </x-slot>
                                 <x-slot name="title">
@@ -374,52 +374,52 @@
                 <div class="w-full sm:w-1/2  xl:px-8">
                     <div id="lightgallery">
                         <a data-sub-html="Send bulk SMS to absentees"
-                            href="{{ asset('storage/images/avant_school_management_system_mockus_android_l.png') }}">
+                            href="{{ asset('images/static/avant_school_management_system_mockus_android_l.png') }}">
                             <img class="object-cover h-48 inline mb-2"
                                 alt="avant_school_management_system_mockus_android_l"
-                                src="{{ asset('storage/images/avant_school_management_system_mockus_android_l.png') }}" />
+                                src="{{ asset('images/static/avant_school_management_system_mockus_android_l.png') }}" />
                         </a>
                         <a data-sub-html="Principal's dashboard"
-                            href="{{ asset('storage/images/avant_school_management_system_mockus_android_p.png') }}">
+                            href="{{ asset('images/static/avant_school_management_system_mockus_android_p.png') }}">
                             <img class="object-cover h-48 inline mb-2"
                                 alt="avant_school_management_system_mockus_android_p"
-                                src="{{ asset('storage/images/avant_school_management_system_mockus_android_p.png') }}" />
+                                src="{{ asset('images/static/avant_school_management_system_mockus_android_p.png') }}" />
                         </a>
                         <a data-sub-html="Login page"
-                            href="{{ asset('storage/images/avant_school_management_system_screen_shot_LOGIN.png') }}">
+                            href="{{ asset('images/static/avant_school_management_system_screen_shot_LOGIN.png') }}">
                             <img class="object-cover h-48 inline mb-2"
                                 alt="avant_school_management_system_screen_shot_LOGIN"
-                                src="{{ asset('storage/images/avant_school_management_system_screen_shot_LOGIN.png') }}" />
+                                src="{{ asset('images/static/avant_school_management_system_screen_shot_LOGIN.png') }}" />
                         </a>
                         <a data-sub-html="Prepqre online/offline exam questions"
-                            href="{{ asset('storage/images/avant_school_management_system_screenshots_01.png') }}">
+                            href="{{ asset('images/static/avant_school_management_system_screenshots_01.png') }}">
                             <img class="object-cover h-48 inline mb-2"
                                 alt="avant_school_management_system_screenshots_01"
-                                src="{{ asset('storage/images/avant_school_management_system_screenshots_01.png') }}" />
+                                src="{{ asset('images/static/avant_school_management_system_screenshots_01.png') }}" />
                         </a>
                         <a data-sub-html="Students online exam on tablet"
-                            href="{{ asset('storage/images/avant_school_management_system_screenshots_02.png') }}">
+                            href="{{ asset('images/static/avant_school_management_system_screenshots_02.png') }}">
                             <img class="object-cover h-48 inline mb-2"
                                 alt="avant_school_management_system_screenshots_02"
-                                src="{{ asset('storage/images/avant_school_management_system_screenshots_02.png') }}" />
+                                src="{{ asset('images/static/avant_school_management_system_screenshots_02.png') }}" />
                         </a>
                         <a data-sub-html="Students online exam on mobile"
-                            href="{{ asset('storage/images/avant_school_management_system_screenshots_03.png') }}">
+                            href="{{ asset('images/static/avant_school_management_system_screenshots_03.png') }}">
                             <img class="object-cover h-48 inline mb-2"
                                 alt="avant_school_management_system_screenshots_03"
-                                src="{{ asset('storage/images/avant_school_management_system_screenshots_03.png') }}" />
+                                src="{{ asset('images/static/avant_school_management_system_screenshots_03.png') }}" />
                         </a>
                         <a data-sub-html="Admit card(for offline exam) and exam routine"
-                            href="{{ asset('storage/images/avant_school_management_system_screenshots_04.png') }}">
+                            href="{{ asset('images/static/avant_school_management_system_screenshots_04.png') }}">
                             <img class="object-cover h-48 inline mb-2"
                                 alt="avant_school_management_system_screenshots_04"
-                                src="{{ asset('storage/images/avant_school_management_system_screenshots_04.png') }}" />
+                                src="{{ asset('images/static/avant_school_management_system_screenshots_04.png') }}" />
                         </a>
                         <a data-sub-html="Students online exam on mobile with descriptive questions"
-                            href="{{ asset('storage/images/avant_school_management_system_screenshots_05.png') }}">
+                            href="{{ asset('images/static/avant_school_management_system_screenshots_05.png') }}">
                             <img class="object-cover h-48 inline mb-2"
                                 alt="avant_school_management_system_screenshots_05"
-                                src="{{ asset('storage/images/avant_school_management_system_screenshots_05.png') }}" />
+                                src="{{ asset('images/static/avant_school_management_system_screenshots_05.png') }}" />
                         </a>
                     </div>
                 </div>
