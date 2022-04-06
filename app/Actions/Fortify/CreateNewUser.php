@@ -20,6 +20,12 @@ class CreateNewUser implements CreatesNewUsers
      */
     public function create(array $input)
     {
+        // Prevent User Signup if user exists
+        if (User::count() > 0) {
+            abort(403, 'User Signup is not allowed.');
+        }
+
+
         Validator::make($input, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
