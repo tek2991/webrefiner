@@ -497,6 +497,7 @@
                     speed: 500,
                     thumbnail: true,
                     rowHeight: 180,
+                    licenseKey: '0000-0000-000-0000'
                 });
             })
         </script>
