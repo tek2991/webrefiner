@@ -130,8 +130,7 @@ final class ContactTable extends PowerGridComponent
 
             Column::make('CREATED AT', 'created_at_formatted', 'created_at')
                 ->searchable()
-                ->sortable()
-                ->makeInputDatePicker(),
+                ->sortable(),
         ];
     }
 

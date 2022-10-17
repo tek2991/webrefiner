@@ -31,3 +31,6 @@ Route::post('/contact', [ContactController::class, 'post'])->name('contact.store
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard/contact', function () {
+    return view('contact');
+})->name('contact.index');
